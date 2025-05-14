@@ -1,0 +1,8 @@
+CREATE TABLE weight_entries (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  weight DECIMAL(5,2) NOT NULL,     
+  date DATE NOT NULL,               
+  note TEXT,                        
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP  
+);
