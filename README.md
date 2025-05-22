@@ -38,12 +38,19 @@ Ensure MySQL is running locally or hosted.
 Create the weight_entries table:
 
 CREATE TABLE weight_entries (
+
   id INT AUTO_INCREMENT PRIMARY KEY,
+
   weight DECIMAL(5,2) NOT NULL,
+
   date DATE NOT NULL,
+
   note TEXT,
+
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  
 );
 
 4. Add .env File (if needed)
@@ -53,7 +60,7 @@ DATABASE_URL=mysql://user:password@localhost:3306/scalelog
 PORT=5000
 
 5. Run the Development Server
-npm run dev
+
 
 
 
