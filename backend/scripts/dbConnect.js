@@ -14,11 +14,11 @@ export const pool = mysql.createPool({
 });
 
 const connectToDatabase = async () => {
-  let connection;
+  
 
   try {
-    connection = await pool.getConnection();
-    console.log('Connected to the database!');
+    const connection = await pool.getConnection();
+    // console.log('Connected to the database!');
 
   } catch (err) {
     console.error('Error connecting to the database:', err.message);
