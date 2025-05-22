@@ -24,13 +24,19 @@
 
 ### 1. Clone the Repo
 git clone https://github.com/dannymccarragher/scalelog.git
+
 cd scalelog
+
 2. Install Dependencies
+
 npm install
 
 3. Configure Database
+
 Ensure MySQL is running locally or hosted.
+
 Create the weight_entries table:
+
 CREATE TABLE weight_entries (
   id INT AUTO_INCREMENT PRIMARY KEY,
   weight DECIMAL(5,2) NOT NULL,
@@ -41,18 +47,13 @@ CREATE TABLE weight_entries (
 );
 
 4. Add .env File (if needed)
+
 DATABASE_URL=mysql://user:password@localhost:3306/scalelog
+
 PORT=5000
+
 5. Run the Development Server
 npm run dev
-🌐 API Endpoints
-Method	Endpoint	Description
-| Method   | Endpoint       | Description                 |
-| -------- | -------------- | --------------------------- |
-| `POST`   | `/goals`       | Add a new goal              |
-| `GET`    | `/goal`        | Fetch all goals             |
-| `GET`    | `/weights`     | Fetch all weight entries    |
-| `POST`   | `/weights`     | Add a new weight entry      |
-| `DELETE` | `/weights/:id` | Delete a weight entry by ID |
+
 
 
