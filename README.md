@@ -27,11 +27,11 @@ git clone https://github.com/dannymccarragher/scalelog.git
 
 cd scalelog
 
-2. Install Dependencies
+### 2. Install Dependencies
 
 npm install
 
-3. Configure Database
+### 3. Configure Database
 
 Ensure MySQL is running locally or hosted.
 
@@ -50,16 +50,18 @@ CREATE TABLE weight_entries (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-  
+
 );
 
-4. Add .env File (if needed)
+### 4. Add .env File (if needed)
 
 DATABASE_URL=mysql://user:password@localhost:3306/scalelog
 
 PORT=5000
 
-5. Run the Development Server
+### 5. Run the Development Server
+
+npm run dev
 
 
 
