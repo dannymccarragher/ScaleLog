@@ -1,7 +1,7 @@
-const LogContainer = ({ data, loading }) => {
+const LogContainer = ({ data, loading, deleteWeight }) => {
 
 
-    console.log('Received data:', data);
+    // console.log('Received data:', data);
 
     return (
         <div>
@@ -19,6 +19,9 @@ const LogContainer = ({ data, loading }) => {
                         <tr key={index}>
                             <td>{new Date(log.date).toLocaleDateString()}</td>
                             <td>{log.weight}</td>
+                            <td>
+                                <button onClick={() => deleteWeight(log.id)}>Delete Weight</button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>

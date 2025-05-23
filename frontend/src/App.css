@@ -52,11 +52,64 @@ tbody tr:hover {
   font-size: 1.5rem;
   font-weight: 700;
   color: #333;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-bottom: 2px solid #4a90e2;
   padding-bottom: 0.25rem;
 }
+
+.weight-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0;
+}
+
+
+
+.weight-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.weight-form input,
+.weight-form textarea {
+  width: 100%;
+  padding: 16px 14px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline-color: #4a90e2;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.weight-form button {
+  padding: 16px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.weight-form button:hover {
+  background-color: #3b7dc9;
+}
+
 
 @media (max-width: 640px) {
   .grid-container {

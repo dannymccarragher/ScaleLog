@@ -37,13 +37,13 @@ export const Header = ({ children }) => {
           backgroundColor: 'transparent',
           fontSize: '16px',
           fontWeight: '500',
-          color: '#333',
+          color: '#000000',
           cursor: 'pointer',
           borderRadius: '4px',
           transition: 'background-color 0.2s ease',
           ...child.props.style,
         },
-        onMouseEnter: e => e.currentTarget.style.backgroundColor = '#a4dae4',
+        onMouseEnter: e => e.currentTarget.style.backgroundColor = '#4a90e2',
         onMouseLeave: e => e.currentTarget.style.backgroundColor = 'transparent'
       })
     )}
