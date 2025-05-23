@@ -110,6 +110,27 @@ tbody tr:hover {
   background-color: #3b7dc9;
 }
 
+/* Make the delete button styled red */
+table tbody tr td button {
+  background-color: #e74c3c; /* bright red */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap; /* prevent button text wrap */
+  display: inline-block;
+}
+
+/* Make the table cell shrink to fit its content */
+table tbody tr td:last-child {
+  width: 1%;       /* shrink as much as possible */
+  white-space: nowrap; /* no wrap */
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+
 
 @media (max-width: 640px) {
   .grid-container {
