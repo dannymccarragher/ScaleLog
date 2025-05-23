@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import Chart from './Chart';
 
-const ChartContainer = () => {
-  const [dataPoints, setDataPoints] = useState([]);
+const ChartContainer = ({dataPoints}) => {
+  // const [dataPoints, setDataPoints] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  
 
   useEffect(() => {
     fetchData();

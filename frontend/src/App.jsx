@@ -39,6 +39,11 @@ function App() {
     }
   };
 
+  const dataPoints = logs.map(entry => ({
+    date: entry.date,
+    value: parseFloat(entry.weight),
+  }));
+
   return (
     <>
       <Header>
@@ -48,7 +53,7 @@ function App() {
       </Header>
       <div className="app-container">
         <div className="grid-container">
-          <div className="grid-item"><ChartContainer /></div>
+          <div className="grid-item"><ChartContainer dataPoints={dataPoints} /></div>
           <div className="grid-item"><Logs logs={logs} loading={loading} fetchLogs={fetchLogs} /></div>
           <div className="grid-item">
             <AddWeight ref={addWeightInputRef} refreshLogs={fetchLogs} />
